@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You, My Love ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <button class="music-toggle" id="musicToggle">🎵</button>
+        <div class="music-panel" id="musicPanel">
+            <div class="music-info">
+                <div class="current-song" id="currentSong">Click to play music</div>
+                <div class="music-controls">
+                    <button class="music-btn prev-btn" id="prevBtn" title="Previous song">⏮️</button>
+                    <button class="music-btn play-pause-btn" id="playPauseBtn" title="Play/Pause">▶️</button>
+                    <button class="music-btn next-btn" id="nextBtn" title="Next song">⏭️</button>
+                </div>
+                <div class="volume-control">
+                    <span class="volume-icon">🔊</span>
+                    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="70" title="Volume">
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="backgroundMusic"></audio>
+
+    <!-- Falling Hearts & Stars -->
+    <div id="fallingElements"></div>
+
+    <!-- Black Cats -->
+    <div class="cat cat-float" style="top: 20%; left: 10%;">🐱</div>
+    <div class="cat cat-walk" style="top: 60%; left: -100px;">🐈</div>
+    <div class="cat cat-float" style="top: 80%; left: 85%; animation-delay: 2s;">🐱</div>
+
+    <!-- Sheep -->
+    <div class="sheep sheep-float" style="top: 15%; left: 75%; animation-delay: 1s;">🐑</div>
+    <div class="sheep sheep-walk" style="top: 45%; left: -100px; animation-delay: 3s;">🐑</div>
+    <div class="sheep sheep-float" style="top: 70%; left: 15%; animation-delay: 2s;">🐑</div>
+    <div class="sheep sheep-float" style="top: 35%; left: 90%; animation-delay: 4s;">🐑</div>
+
+    <!-- Teddy Bear -->
+    <div class="teddy-bear" style="bottom: 10%; right: 5%;">🧸</div>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>For You, My Love</h1>
+            <p>Every moment with you feels like a beautiful dream</p>
+            <div class="floating-heart">💖</div>
+            <p style="font-size: 1.1rem; margin-top: 20px;">Scroll down to discover what's in my heart</p>
+        </section>
+
+        <!-- Love Letter Section -->
+        <section id="loveLetterSection">
+            <h2>A Letter From My Heart</h2>
+            <div class="love-letter" id="loveLetter">
+                <span id="typewriterText"></span><span class="typewriter-caret" id="caret"></span>
+            </div>
+        </section>
+
+        <!-- Why I Love You Section -->
+        <section>
+            <h2>Why I Love You</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <h3>Your Smile</h3>
+                    <p>It lights up my world and makes every day brighter. Your laughter is my favorite sound.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Your Kindness</h3>
+                    <p>The way you care for others and see the good in everything inspires me every single day.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Your Mind</h3>
+                    <p>Your thoughts, your dreams, your perspective—I fall in love with your mind all over again.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Your Presence</h3>
+                    <p>Just being near you makes everything feel right. You're my home, my peace, my everything.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Your Strength</h3>
+                    <p>You face challenges with grace and courage. Your resilience amazes me constantly.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Your Heart</h3>
+                    <p>The love you give so freely, the way you love—it's the most beautiful thing I've ever known.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Relationship Timeline Section -->
+        <section>
+            <h2>Our Story</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>The Beginning</h3>
+                    <p>It started with a glance, a smile, a moment that changed everything. I knew then that you were special, that you were someone I wanted to know, to understand, to be near.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Getting Closer</h3>
+                    <p>Every conversation revealed something new about you, and I found myself falling deeper. Your stories, your dreams, your quiet moments—they all became precious to me.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Realizing It</h3>
+                    <p>There came a moment when I couldn't imagine my days without you. You weren't just someone I liked—you became someone I needed, someone I loved.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Growing Together</h3>
+                    <p>We've built something beautiful together. Through laughter and quiet moments, through challenges and celebrations, we've grown closer, stronger, more in love.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Today</h3>
+                    <p>Every day with you feels like a gift. I wake up grateful for you, go to sleep thinking of you, and dream of all our tomorrows together.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Together Section -->
+        <section>
+            <h2>Our Future</h2>
+            <div class="future-dreams">
+                <p>I dream of mornings waking up next to you, of coffee shared in comfortable silence, of adventures we'll take together.</p>
+                <p>I dream of building a life where your happiness is my priority, where we support each other's dreams, where we grow old together, still finding new reasons to fall in love.</p>
+                <p>I dream of quiet evenings and loud laughter, of challenges we'll face together, of memories we'll create, of a love that deepens with every passing day.</p>
+                <p>I promise to choose you, to love you, to be there for you—today, tomorrow, and all the days after.</p>
+            </div>
+        </section>
+
+        <!-- Miss Me Section -->
+        <section class="miss-me-section">
+            <h2>When You Miss Me</h2>
+            <p style="margin-bottom: 20px;">I'm always thinking of you, even when we're apart.</p>
+            <button class="miss-me-btn" id="missMeBtn">Click this when you miss me</button>
+            <div class="hidden-message" id="hiddenMessage">
+                <p>💕</p>
+                <p>I miss you too, my love. Every moment we're apart, I'm counting down until I can see you again, hold you again, be with you again.</p>
+                <p>You're always in my thoughts, in my heart, in my dreams. Distance doesn't change how I feel—it only makes me realize how much you mean to me.</p>
+                <p>Know that wherever you are, I'm sending you all my love, all my warmth, all my heart. You're never alone because you carry a piece of me with you always.</p>
+                <p>I love you, now and always. 💖</p>
+            </div>
+        </section>
+
+        <!-- Secret Message Section -->
+        <section>
+            <div class="secret-message">
+                <h2 style="margin-bottom: 30px;">A Secret Just For You</h2>
+                <p>There's something I want you to know, something I don't say often enough.</p>
+                <p>You are the most beautiful person I've ever known—not just in how you look, but in who you are. Your kindness, your strength, your laughter, your quiet moments of vulnerability—all of it is beautiful to me.</p>
+                <p>I fall in love with you a little more every day. Sometimes it's in the way you smile when you're happy, sometimes it's in how you handle difficult moments, sometimes it's just in the way you exist in the world.</p>
+                <p>You've changed my life in ways I never imagined possible. You've shown me what love really means, what it feels like to care for someone so deeply that their happiness becomes your own.</p>
+                <p>This website, these words, this moment—it's all because I wanted to tell you, in every way I can, that you are loved, you are cherished, you are everything to me.</p>
+                <p style="margin-top: 30px; font-size: 1.3rem; font-weight: 500;">Thank you for being you. Thank you for being mine. 💕</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

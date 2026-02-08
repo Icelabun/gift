@@ -1,0 +1,21 @@
+.after-dark-shell {
+  background: radial-gradient(circle at top, #020617, #020617);
+  border-color: rgba(15, 23, 42, 0.9);
+}
+
+.after-dark-body {
+  color: #e5e7eb;
+}
+
+.after-dark-line {
+  opacity: 0.92;
+}
+
+.after-dark-line--text {
+  letter-spacing: 0.02em;
+}
+
+.after-dark-line--spacer {
+  opacity: 0;
+}
+

@@ -1,0 +1,93 @@
+@keyframes soft-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-heart {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80px) translateX(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes firework-burst {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+}
+
+.fade-in-soft {
+  animation: soft-fade-in 600ms ease-out both;
+}
+
+.heart-1 {
+  animation: float-heart 4800ms ease-in-out infinite;
+}
+
+.heart-2 {
+  animation: float-heart 5200ms ease-in-out infinite;
+  animation-delay: 700ms;
+}
+
+.heart-3 {
+  animation: float-heart 5600ms ease-in-out infinite;
+  animation-delay: 1400ms;
+}
+
+.heart-4 {
+  animation: float-heart 6000ms ease-in-out infinite;
+  animation-delay: 2200ms;
+}
+
+.firework {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(248, 113, 113, 0.9), transparent 70%);
+  opacity: 0;
+  animation: firework-burst 2200ms ease-out infinite;
+}
+
+.firework--one {
+  top: 6%;
+  left: 8%;
+  animation-delay: 0ms;
+}
+
+.firework--two {
+  top: 12%;
+  right: 6%;
+  animation-delay: 700ms;
+}
+
+.firework--three {
+  top: 30%;
+  left: 40%;
+  animation-delay: 1400ms;
+}
+

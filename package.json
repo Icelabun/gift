@@ -1,0 +1,24 @@
+{
+  "name": "isa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "npm run dev --prefix nvd",
+    "build": "npm run build --prefix nvd",
+    "preview": "npm run preview --prefix nvd",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Icelabun/gift.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Icelabun/gift/issues"
+  },
+  "homepage": "https://github.com/Icelabun/gift#readme"
+}
